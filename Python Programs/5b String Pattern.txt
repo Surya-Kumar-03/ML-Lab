@@ -1,0 +1,9 @@
+import math
+N, M = map(int, input("Enter N and M: ").split())
+for i in range(0, math.floor(N/2)):
+    s = '.|.'*i
+    print(s.rjust(math.floor((M-2)/2),'-')+".|."+s.ljust(math.floor((M-2)/2),"-"))
+print("WELCOME".center(M,"-"))    
+for i in reversed(range(0, math.floor(N/2))):
+    s = '.|.'*i
+    print(s.rjust(math.floor((M-2)/2),'-')+".|."+s.ljust(math.floor((M-2)/2),"-"))

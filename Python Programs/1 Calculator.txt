@@ -1,0 +1,14 @@
+print("Operations: +, -, *, /")
+op = input("Select your Operator: ")
+num1 = float(input("Enter First Number: "))
+num2 = float(input("Enter Second Number: "))
+if op == '+':
+    print("Sum is: ", num1 + num2)
+elif op == '-':
+    print("Difference is: ", num1 - num2)
+elif op == '*':
+    print("Product is: ", num1 * num2)
+elif op == '/':
+    print("Quotient is: ", num1 / num2)
+else:
+    print("Invalid Input!")

@@ -1,0 +1,12 @@
+my_list = []
+n = int(input("Enter the number of elements: "))
+for i in range(n):
+    elem = int(input(f"Enter Element {i + 1}: "))
+    my_list.append(elem)
+
+largest = my_list[0]
+for num in my_list:
+    if num > largest:
+        largest = num
+
+print("The largest element in the list is:", largest)

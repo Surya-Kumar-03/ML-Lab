@@ -1,0 +1,12 @@
+lower = int(input("Enter the lower bound: "))
+upper = int(input("Enter the upper bound: "))
+for num in range(lower, upper + 1):
+    order = len(str(num))
+    current = num
+    sum = 0
+    while(current > 0):
+        last_digit = current % 10
+        sum += last_digit ** order
+        current //= 10
+    if(sum == num):
+        print(num)

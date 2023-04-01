@@ -1,0 +1,21 @@
+def count(input):
+    alpha, lower, upper, special_char, digit = 0, 0, 0, 0, 0
+    for i in range(len(input)):
+        if input[i].isalpha():
+            alpha += 1
+            if input[i].islower():
+                lower += 1
+            else:
+                upper += 1
+        elif input[i].isdigit():
+            digit += 1
+        elif input[i] != " ":
+            special_char += 1
+    print("Digits: ", digit)
+    print("Lowercase: ", lower)
+    print("Uppercase: ", upper)
+    print("Special Characters: ", special_char)
+    print("Alphabets: ", alpha)
+
+str = input("Enter Input: ")
+count(str)

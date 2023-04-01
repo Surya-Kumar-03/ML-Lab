@@ -1,0 +1,11 @@
+def summation(a, b):
+    return a + b
+def multiplication(a, b):
+    return a * b
+def divide(a, b):
+    return a /b
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+print("Sum = ", summation(num1, num2))
+print("Product = ", multiplication(num1, num2))
+print("Divisor = ", divide(num1, num2))
